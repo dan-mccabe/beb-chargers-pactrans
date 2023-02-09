@@ -329,7 +329,6 @@ def get_route_data(rt):
     rt_df = pd.read_csv('{}/routes.txt'.format(gtfs_folder))
     trip_df = pd.read_csv('{}/trips.txt'.format(gtfs_folder))
     shape_df = pd.read_csv('{}/shapes.txt'.format(gtfs_folder))
-    stop_time_df = pd.read_csv('{}/stop_times.txt').format(gtfs_folder)
     # Pick a typical Monday between 10/21/19 and 3/20/20. Find the
     # corresponding service ID.
     row = cal_df[(cal_df['monday'] == 1) & (cal_df['start_date'] == 20191021)

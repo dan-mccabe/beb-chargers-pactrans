@@ -1,0 +1,6 @@
+# Data files for BEB charging infrastructure optimization
+## so_king_cty_sites.csv
+This small CSV file contains the names and locations of seven candidate charging sites in South King County, WA. The column `Name` gives the name of each site. `y` is the latitude of each candidate site, and `x` is the longitude.
+
+## gtfs
+The `gtfs` directory contains relevant GTFS (General Transit Feed Specification) files for the project. These files were obtained from the King County Metro GTFS feed (https://metro.kingcounty.gov/gtfs/). The data were downloaded in February 2020 and pertain to the period of February 10, 2020 to June 12, 2020. The `block.txt`, `block_trip.txt`, `calendar.txt`, `calendar_dates.txt`, `routes.txt`, `shapes.txt`, `stop_times.txt`, and `trips.txt` files are included. These are all unmodified from the original GTFS feed. Full GTFS documentation can be found at https://developers.google.com/transit/gtfs/reference. If you wish to update the GTFS data, you can use the `update_gtfs_data()` function in `beb_data.py`, which will overwrite the 2020 data with Metro's current GTFS files.
